@@ -1,6 +1,7 @@
 # Taxassistant-AI2025
 AI-Powered Tax Assistant
 We have to run this command : pip install openai (to import the necessary libraries)
+IMPORTANT app.py is main python file run this on terminal
 Overview
 The AI-Powered Tax Assistant is a Python-based project designed to help users with income tax calculations, tax-saving tips, and answering tax-related questions using OpenAI's API. The application provides an interactive console-based interface to assist users in managing their taxes efficiently.
 Features
