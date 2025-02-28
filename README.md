@@ -1,48 +1,62 @@
 # Taxassistant-AI2025
-AI-Powered Tax Assistant
-We have to run this command : pip install openai (to import the necessary libraries)
-IMPORTANT app.py is main python file run this on terminal
+AI-Powered Tax Assistance Bot
 Overview
-The AI-Powered Tax Assistant is a Python-based project designed to help users with income tax calculations, tax-saving tips, and answering tax-related questions using OpenAI's API. The application provides an interactive console-based interface to assist users in managing their taxes efficiently.
+The AI-Powered Tax Assistance Bot is a Python-based application designed to help users calculate income tax, provide tax-saving tips, and answer tax-related questions using OpenAI's GPT-4 model. This bot simplifies tax management by offering accurate calculations, actionable advice, and AI-driven responses to complex tax queries.
+
 Features
-Income Tax Calculation: Automatically computes tax liability based on Indian tax slabs.
-Tax-Saving Tips: Provides general tax-saving strategies.
-AI-Powered Q&A: Users can ask tax-related questions and get AI-generated responses.
-User-Friendly Interface: Console-based interactive system.
+1. Income Tax Calculation
+Calculates income tax based on Indian tax brackets:
+Up to ₹2,50,000: No tax
+₹2,50,001 to ₹5,00,000: 5%
+₹5,00,001 to ₹10,00,000: 10%
+Above ₹10,00,000: 20%
 
-To run this Python script in VS Code, follow these steps:
+2. Tax Tips
+Provides actionable tax-saving tips, such as:
+Claiming home loan benefits (Section 80C and Section 24).
+Investing in health insurance (Section 80D).
+Contributing to retirement accounts.
 
- Step 1: Install VS Code & Python
-1. Download and install [VS Code](https://code.visualstudio.com/Download).
-2. Install Python from [python.org](https://www.python.org/downloads/).
-3. Open VS Code, and install the Python extension from the Extensions Marketplace.
+3. AI-Powered Tax Q&A
+Integrates OpenAI's GPT-4 model to answer user queries on tax-related topics.
+Delivers clear, concise, and accurate responses.
+User-Friendly Interface
+Simple command-line interface for easy navigation and interaction.
 
- Step 2: Set Up a Virtual Environment (Recommended)
-1. Open VS Code and navigate to your project folder.
-2. Open the Terminal(`Ctrl + ~`).
-3. Create a virtual environment:
-   python -m venv venv
-4. Activate the virtual environment:
-   - Windows (CMD/PowerShell):
-     venv\Scripts\activate
-   - Mac/Linux:
-     source venv/bin/activate
-Step 3: Install Required Libraries**
-Run the following command in the terminal to install dependencies:
+4. Technologies Used
+Programming Language: Python
+AI Integration: OpenAI GPT-4 API
+Libraries: openai for API integration
+Development Tools: Python IDEs (e.g., PyCharm, VSCode), Git for version control
 
-pip install openai
+How to Use:
+1. Set Up OpenAI API Key
+Replace api_key="" in the code with your OpenAI API key.
+
+2. Run the Application
+   Execute the script using Python:
+   python tax_bot.py
+
+3.Navigate the Menu
+-Choose from the following options:
+1. Calculate Income Tax: Enter your annual income to get the tax amount.
+2. Get Tax Tips: View actionable tax-saving tips.
+3. Ask a Tax Question: Ask any tax-related question and get an AI-generated response.
+4. Exit: Close the application.
+
+Code Structure
+1.calculate_tax(income): Calculates income tax based on the provided income.
+
+2.get_tax_tips(): Returns a list of tax-saving tips.
+
+3.ask_ai(question): Sends user queries to OpenAI's GPT-4 model and returns the response.
+
+4.main(): Handles the main menu and user interaction.
+
+
+
 
 
   
-Step 4: Run the Script**
-- In VS Code terminal, run:
 
-  python app.py
-
-  
-Functionalities
-Calculate Income Tax: Enter your annual income to get an estimated tax amount.
-Get Tax-Saving Tips: Receive useful strategies to save tax money.
-Ask a Tax Question: Query the AI for tax-related guidance.
-Exit: Close the application.
 
